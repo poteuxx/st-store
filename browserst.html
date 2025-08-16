@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrowserST - SolutionsTechnologie</title>
-    <style>
-        body {background:#121212; color:#fff; font-family:'Roboto', sans-serif; text-align:center; padding:50px;}
-        h1 {font-size:2.5rem; margin-bottom:30px;}
-        form {margin-top:30px;}
-        input[type="submit"] {
-            padding:12px 25px; font-size:16px; background-color:#1a73e8;
-            border:none; border-radius:5px; cursor:pointer; color:white; transition:0.3s;
-        }
-        input[type="submit"]:hover {background-color:#155ab6;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrowserST - SolutionsTechnologie</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {background:#000; color:#fff; font-family:'Montserrat', sans-serif; margin:0; padding:0;}
+header {
+    display:flex; justify-content:space-between; align-items:center;
+    padding:20px 40px; background:#000; position:sticky; top:0; z-index:1000;
+}
+.logo-title {display:flex; align-items:center;}
+.logo-title img {width:50px; height:50px; border-radius:10px; margin-right:15px;}
+.logo-title h2 {font-size:1.8rem; display:flex; align-items:center; color:#fff;}
+nav button {
+    margin-left:12px; padding:10px 20px; border:none; border-radius:25px;
+    cursor:pointer; background:#111; color:#fff; font-weight:bold; transition:0.3s;
+}
+nav button:hover {background:#333; transform:scale(1.05);}
+main {text-align:center; padding:100px 20px;}
+h1 {font-size:3rem; margin-bottom:25px;}
+p {max-width:700px; margin:0 auto 30px; color:#ddd; font-size:1.1rem; line-height:1.5;}
+.section-button, input[type="submit"] {
+    padding:14px 30px; font-size:16px; background:#1a73e8; color:#fff;
+    border:none; border-radius:30px; cursor:pointer; transition:0.3s; text-decoration:none; display:inline-block; margin-top:20px;
+}
+.section-button:hover, input[type="submit"]:hover {background:#155ab6; transform:scale(1.05);}
+footer {text-align:center; padding:30px; background:#000; color:#aaa;}
+@media (max-width:768px){
+    header {flex-direction:column; align-items:flex-start;}
+    nav {margin-top:15px;}
+    h1 {font-size:2.2rem;}
+}
+</style>
 </head>
 <body>
+
+<header>
+    <div class="logo-title">
+        <img src="https://i.imgur.com/YourImageID.png" alt="Icon">
+        <h2>Store Technologie</h2>
+    </div>
+    <nav>
+        <button onclick="location.href='index.html'">Accueil</button>
+        <button onclick="location.href='audiost.html'">AudioST</button>
+        <button onclick="location.href='browserst.html'">BrowserST</button>
+    </nav>
+</header>
+
+<main>
     <h1>BrowserST</h1>
     <p>Achetez BrowserST pour seulement 2,99€ via PayPal :</p>
     <form action="https://www.paypal.com/donate" method="post" target="_top">
@@ -24,5 +58,11 @@
         <input type="hidden" name="amount" value="2.99">
         <input type="submit" value="Payer avec PayPal">
     </form>
+</main>
+
+<footer>
+    &copy; 2025 SolutionsTechnologie. Tous droits réservés.
+</footer>
+
 </body>
 </html>

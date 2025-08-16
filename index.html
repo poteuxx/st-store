@@ -6,7 +6,6 @@
 <title>SolutionsTechnologie</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
-/* Reset & base */
 * {margin:0; padding:0; box-sizing:border-box;}
 body {font-family:'Montserrat', sans-serif; background:#000; color:#fff; line-height:1.6;}
 
@@ -14,7 +13,7 @@ body {font-family:'Montserrat', sans-serif; background:#000; color:#fff; line-he
 header {
     display:flex;
     justify-content:space-between;
-    align-items:center; /* vertical align logo/title with buttons */
+    align-items:center;
     padding:20px 40px;
     background:#000;
     position:sticky;
@@ -22,108 +21,38 @@ header {
     z-index:1000;
 }
 
-.logo-title {
-    display:flex;
-    align-items:center;
-}
-
-.logo-title img {
-    width:50px;
-    height:50px;
-    border-radius:10px;
-    margin-right:15px;
-}
-
-.logo-title h2 {
-    font-size:1.8rem;
-    display:flex;
-    align-items:center; /* vertical align with icon */
-    margin:0;
-}
+.logo-title {display:flex; align-items:center;}
+.logo-title img {width:50px; height:50px; border-radius:10px; margin-right:15px;}
+.logo-title h2 {font-size:1.8rem; display:flex; align-items:center; margin:0;}
 
 /* Navigation buttons */
 nav button {
-    margin-left:12px;
-    padding:12px 22px; /* height matches logo/title */
-    border:none;
-    border-radius:25px;
-    cursor:pointer;
-    background:#111;
-    color:#fff;
-    font-weight:bold;
-    font-size:16px;
-    transition:0.3s;
+    margin-left:12px; padding:12px 22px; border:none; border-radius:25px;
+    cursor:pointer; background:#111; color:#fff; font-weight:bold; font-size:16px; transition:0.3s;
 }
-
-nav button:hover {
-    background:#333;
-    transform:scale(1.05);
-}
+nav button:hover {background:#333; transform:scale(1.05);}
 
 /* Sections */
-section {
-    padding:100px 20px;
-    text-align:center;
-    position:relative;
-}
-
-h1 {
-    font-size:3rem;
-    margin-bottom:25px;
-    color:#fff;
-}
-
-h2 {
-    font-size:2.2rem;
-    margin-bottom:20px;
-    color:#fff;
-}
-
-p {
-    max-width:800px;
-    margin:0 auto 30px;
-    color:#ddd;
-    font-size:1.1rem;
-    line-height:1.5;
-}
+section {padding:100px 20px; text-align:center; position:relative;}
+h1 {font-size:3rem; margin-bottom:25px; color:#fff;}
+h2 {font-size:2.2rem; margin-bottom:20px; color:#fff;}
+p {max-width:800px; margin:0 auto 30px; color:#ddd; font-size:1.1rem; line-height:1.5;}
 
 /* Buttons */
 .section-button {
-    padding:14px 30px;
-    font-size:16px;
-    background:#1a73e8;
-    color:#fff;
-    border:none;
-    border-radius:30px;
-    cursor:pointer;
-    transition:0.3s;
-    text-decoration:none;
-    display:inline-block;
-    margin-top:20px;
+    padding:14px 30px; font-size:16px; background:#1a73e8; color:#fff;
+    border:none; border-radius:30px; cursor:pointer; transition:0.3s;
+    text-decoration:none; display:inline-block; margin-top:20px;
 }
-
-.section-button:hover {
-    background:#155ab6;
-    transform:scale(1.05);
-}
+.section-button:hover {background:#155ab6; transform:scale(1.05);}
 
 /* Footer */
-footer {
-    text-align:center;
-    padding:30px;
-    background:#000;
-    color:#aaa;
-}
+footer {text-align:center; padding:30px; background:#000; color:#aaa;}
 
 /* Responsive */
 @media (max-width:768px){
-    header {
-        flex-direction:column;
-        align-items:flex-start;
-    }
-    nav {
-        margin-top:15px;
-    }
+    header {flex-direction:column; align-items:flex-start;}
+    nav {margin-top:15px;}
     h1 {font-size:2.2rem;}
     h2 {font-size:1.8rem;}
 }
@@ -145,11 +74,13 @@ footer {
 
 <section id="accueil">
     <div style="max-width:1200px; margin:0 auto; text-align:left;">
+        <!-- Main Intro -->
         <h1 style="margin-bottom:15px;">Découvrez Nos Produits</h1>
         <h2>Bienvenue sur SolutionsTechnologie</h2>
 
+        <!-- BrowserST Section -->
         <section id="browserst" style="margin-top:60px;">
-            <h2>À Propos</h2>
+            <h2>BrowserST</h2>
             <p>
                 SolutionsTechnologie propose BrowserST, un logiciel innovant pour faciliter votre expérience. 
                 Notre objectif est de fournir des produits de haute qualité qui répondent à vos besoins en matière 
@@ -159,6 +90,17 @@ footer {
             <a href="browserst.html" class="section-button">Découvrir</a>
         </section>
 
+        <!-- À Propos Section -->
+        <section id="apropos" style="margin-top:80px;">
+            <h2>À Propos</h2>
+            <p>
+                SolutionsTechnologie est une entreprise dédiée à fournir des solutions technologiques innovantes. 
+                Notre objectif est de rendre la technologie accessible et facile à utiliser pour tous, avec des 
+                produits fiables et performants.
+            </p>
+        </section>
+
+        <!-- AudioST Section -->
         <section id="audiost" style="margin-top:80px;">
             <h2>AudioST</h2>
             <p>
@@ -169,6 +111,7 @@ footer {
             </p>
             <a href="audiost.html" class="section-button">En Savoir Plus</a>
         </section>
+
     </div>
 </section>
 

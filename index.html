@@ -2,136 +2,197 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SolutionsTechnologie</title>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" href="https://i.imgur.com/JrjM1jf.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Store | SolutionsTechnologie</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 <style>
-* {margin:0; padding:0; box-sizing:border-box;}
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #000;
-    color: #fff;
-    line-height: 1.6;
-}
-h1, h2, p, button {
-    letter-spacing: 0.5px;
-    line-height: 1.4;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #0b0c0f;
+  color: #ffffff;
+  line-height: 1.5;
 }
 
-
-/* Header */
+/* HEADER */
 header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 40px;
-    background:#000;
-    position:sticky;
-    top:0;
-    z-index:1000;
+  text-align: center;
+  padding: 24px 16px 16px 16px;
+  border-bottom: 1px solid #1f2937;
 }
 
-.logo-title {display:flex; align-items:center;}
-.logo-title img {width:50px; height:50px; border-radius:10px; margin-right:15px;}
-.logo-title h2 {font-size:1.8rem; display:flex; align-items:center; margin:0;}
-
-/* Navigation buttons */
-nav button {
-    margin-left:12px; padding:12px 22px; border:none; border-radius:25px;
-    cursor:pointer; background:#111; color:#fff; font-weight:bold; font-size:16px; transition:0.3s;
+header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  background: linear-gradient(90deg, #60a5fa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-nav button:hover {background:#333; transform:scale(1.05);}
 
-/* Sections */
-section {padding:100px 20px; text-align:center; position:relative;}
-h1 {font-size:3rem; margin-bottom:25px; color:#fff;}
-h2 {font-size:2.2rem; margin-bottom:20px; color:#fff;}
-p {max-width:800px; margin:0 auto 30px; color:#ddd; font-size:1.1rem; line-height:1.5;}
-
-/* Buttons */
-.section-button {
-    padding:14px 30px; font-size:16px; background:#1a73e8; color:#fff;
-    border:none; border-radius:30px; cursor:pointer; transition:0.3s;
-    text-decoration:none; display:inline-block; margin-top:20px;
+header p {
+  font-size: 12px;
+  color: #cbd5e1;
 }
-.section-button:hover {background:#155ab6; transform:scale(1.05);}
 
-/* Footer */
-footer {text-align:center; padding:30px; background:#000; color:#aaa;}
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid #1f2937;
+}
 
-/* Responsive */
-@media (max-width:768px){
-    header {flex-direction:column; align-items:flex-start;}
-    nav {margin-top:15px;}
-    h1 {font-size:2.2rem;}
-    h2 {font-size:1.8rem;}
+nav a {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 12px;
+  border-radius: 24px; /* rounder buttons */
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2563eb;
+  border: 1px solid #1f2937;
+  transition: all 0.25s ease;
+}
+
+nav a:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+section h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #60a5fa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section p {
+  font-size: 13px;
+  color: #e5e7eb;
+  margin-bottom: 10px;
+}
+
+/* BUTTONS IN SECTIONS */
+section a.button {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 12px;
+  border-radius: 24px; /* rounder */
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2563eb;
+  transition: all 0.25s ease;
+}
+
+section a.button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 14px;
+  font-size: 11px;
+  color: #9ca3af;
+  border-top: 1px solid #1f2937;
+  margin-top: 20px;
+  background-color: #020617;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 18px;
+  }
+  nav a {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+  section h2 {
+    font-size: 15px;
+  }
+  section p {
+    font-size: 12px;
+  }
+  section a.button {
+    padding: 6px 16px;
+    font-size: 11px;
+  }
 }
 </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-title">
-        <img src="https://i.imgur.com/JrjM1jf.png" alt="Icon">
-        <h2>Store Technologie</h2>
-    </div>
-    <nav>
-        <button onclick="location.href='#accueil'">Accueil</button>
-        <button onclick="location.href='audiost.html'">AudioST</button>
-        <button onclick="location.href='browserst.html'">BrowserST</button>
-    </nav>
+  <h1>ST-Store</h1>
+  <p>SolutionsTechnologie — Produits Web & Audio</p>
 </header>
 
-<section id="accueil">
-    <div style="max-width:1200px; margin:0 auto; padding-top:80px;">
+<nav>
+  <a href="audioST.html">AudioST</a>
+  <a href="browserST.html">BrowserST</a>
+  <a href="index.html">Accueil</a>
+</nav>
 
-        <!-- Main Intro -->
-        <h1 style="margin-bottom:15px;">Découvrez Nos Produits</h1>
-        <h2>Bienvenue sur SolutionsTechnologie</h2>
+<main>
+  <section>
+    <h2>Bienvenue sur ST-Store</h2>
+    <p>
+      Découvrez nos produits numériques et audio conçus pour être simples, fiables et performants. 
+      Une expérience minimaliste centrée sur l’utilisateur.
+    </p>
+  </section>
 
-        <!-- À Propos Section aligned with header -->
-        <div style="margin-top:60px; display:flex; flex-direction:column; align-items:flex-start;">
-            <h2 style="margin-left:0; /* align with Store Technologie */">À Propos</h2>
-        </div>
+  <section>
+    <h2>BrowserST</h2>
+    <p>
+      BrowserST est un navigateur amélioré avec des outils puissants et une interface claire. 
+      Pensé pour tous les utilisateurs, il vous offre rapidité et sécurité.
+    </p>
+    <a class="button" href="browserST.html">Découvrir BrowserST</a>
+  </section>
 
-        <!-- BrowserST Section -->
-        <section id="browserst" style="margin-top:80px; text-align:center;">
-            <h2>BrowserST</h2>
-            <p>
-                SolutionsTechnologie propose BrowserST, un logiciel innovant pour faciliter votre expérience. 
-                Notre objectif est de fournir des produits de haute qualité qui répondent à vos besoins en matière 
-                de navigation web. Avec une approche centrée sur l'utilisateur, nous nous efforçons de rendre la 
-                technologie accessible à tous.
-            </p>
-            <a href="browserst.html" class="section-button">Découvrir</a>
-        </section>
-
-        <!-- AudioST Section -->
-        <section id="audiost" style="margin-top:80px; text-align:center;">
-            <h2>AudioST</h2>
-            <p>
-                SolutionsTechnologie propose AudioST, un logiciel innovant pour faciliter votre expérience. 
-                Notre objectif est de fournir des produits de haute qualité qui répondent à vos besoins en matière 
-                de son. Avec une approche centrée sur l'utilisateur, nous nous efforçons de rendre la 
-                technologie accessible à tous.
-            </p>
-            <a href="audiost.html" class="section-button">En Savoir Plus</a>
-        </section>
-
-    </div>
-</section>
-
+  <section>
+    <h2>AudioST</h2>
+    <p>
+      AudioST fournit une expérience sonore de haute qualité, intuitive et optimisée. 
+      Profitez d’un son clair et immersif sur tous vos appareils.
+    </p>
+    <a class="button" href="audioST.html">En savoir plus sur AudioST</a>
+  </section>
+</main>
 
 <footer>
-    &copy; 2025 SolutionsTechnologie. Tous droits réservés.
+  © 2026 SolutionsTechnologie. Tous droits réservés.<br>
+  Design minimal & fiable.
 </footer>
 
 </body>
 </html>
-
-
-
-
-

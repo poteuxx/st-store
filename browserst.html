@@ -2,80 +2,197 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BrowserST - SolutionsTechnologie</title>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" href="https://i.imgur.com/JrjM1jf.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BrowserST | ST-Store</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 <style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #000;
-    color: #fff;
-    line-height: 1.6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #0b0c0f;
+  color: #ffffff;
+  line-height: 1.5;
 }
-    h1, h2, p, button {
-    letter-spacing: 0.5px;
-    line-height: 1.4;
-}
+
+/* HEADER */
 header {
-    display:flex; justify-content:space-between; align-items:center;
-    padding:20px 40px; background:#000; position:sticky; top:0; z-index:1000;
+  text-align: center;
+  padding: 24px 16px 16px 16px;
+  border-bottom: 1px solid #1f2937;
 }
-.logo-title {display:flex; align-items:center;}
-.logo-title img {width:50px; height:50px; border-radius:10px; margin-right:15px;}
-.logo-title h2 {font-size:1.8rem; display:flex; align-items:center; color:#fff;}
-nav button {
-    margin-left:12px; padding:10px 20px; border:none; border-radius:25px;
-    cursor:pointer; background:#111; color:#fff; font-weight:bold; transition:0.3s;
+
+header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  background: linear-gradient(90deg, #60a5fa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-nav button:hover {background:#333; transform:scale(1.05);}
-main {text-align:center; padding:100px 20px;}
-h1 {font-size:3rem; margin-bottom:25px;}
-p {max-width:700px; margin:0 auto 30px; color:#ddd; font-size:1.1rem; line-height:1.5;}
-.section-button, input[type="submit"] {
-    padding:14px 30px; font-size:16px; background:#1a73e8; color:#fff;
-    border:none; border-radius:30px; cursor:pointer; transition:0.3s; text-decoration:none; display:inline-block; margin-top:20px;
+
+header p {
+  font-size: 12px;
+  color: #cbd5e1;
 }
-.section-button:hover, input[type="submit"]:hover {background:#155ab6; transform:scale(1.05);}
-footer {text-align:center; padding:30px; background:#000; color:#aaa;}
-@media (max-width:768px){
-    header {flex-direction:column; align-items:flex-start;}
-    nav {margin-top:15px;}
-    h1 {font-size:2.2rem;}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid #1f2937;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 12px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2563eb;
+  border: 1px solid #1f2937;
+  transition: all 0.25s ease;
+}
+
+nav a:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+section h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #60a5fa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section p {
+  font-size: 13px;
+  color: #e5e7eb;
+  margin-bottom: 10px;
+}
+
+/* BUTTONS */
+section a.button {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 12px;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #2563eb;
+  transition: all 0.25s ease;
+}
+
+section a.button:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 14px;
+  font-size: 11px;
+  color: #9ca3af;
+  border-top: 1px solid #1f2937;
+  margin-top: 20px;
+  background-color: #020617;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 18px;
+  }
+  nav a {
+    padding: 6px 14px;
+    font-size: 11px;
+  }
+  section h2 {
+    font-size: 15px;
+  }
+  section p {
+    font-size: 12px;
+  }
+  section a.button {
+    padding: 6px 16px;
+    font-size: 11px;
+  }
 }
 </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-title">
-        <img src="https://i.imgur.com/JrjM1jf.png" alt="Icon">
-        <h2>Store Technologie</h2>
-    </div>
-    <nav>
-        <button onclick="location.href='index.html'">Accueil</button>
-        <button onclick="location.href='audiost.html'">AudioST</button>
-        <button onclick="location.href='browserst.html'">BrowserST</button>
-    </nav>
+  <h1>BrowserST</h1>
+  <p>SolutionsTechnologie — Navigateur amélioré</p>
 </header>
 
-<main>
-    <h1>BrowserST</h1>
-    <p>Achetez BrowserST pour seulement 2,99CAD via PayPal :</p>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-  <input type="hidden" name="cmd" value="_xclick">
-  <input type="hidden" name="business" value="zxer_officiel@outlook.fr"> <!-- your PayPal email -->
-  <input type="hidden" name="item_name" value="BrowserST">
-  <input type="hidden" name="currency_code" value="CAD">
-  <input type="hidden" name="amount" value="2.99">
-  <input type="submit" value="Acheter avec PayPal" class="section-button">
-</form>
+<nav>
+  <a href="index.html">ST-Store</a>
+  <a href="audioST.html">AudioST</a>
+  <a href="browserST.html">BrowserST</a>
+</nav>
 
+<main>
+  <section>
+    <h2>Présentation de BrowserST</h2>
+    <p>
+      BrowserST est un navigateur moderne conçu pour vous offrir vitesse, sécurité et une interface épurée. 
+      Tous les outils dont vous avez besoin à portée de main.
+    </p>
+  </section>
+
+  <section>
+    <h2>Fonctionnalités principales</h2>
+    <ul style="margin-left:18px; margin-bottom:10px; font-size:13px;">
+      <li>Navigation rapide et fluide</li>
+      <li>Blocage publicitaire intégré</li>
+      <li>Mode sombre automatique</li>
+      <li>Compatible tous appareils</li>
+      <li>Interface minimaliste et claire</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Découvrir BrowserST</h2>
+    <p>
+      Téléchargez ou essayez BrowserST directement depuis cette page et profitez d'une expérience utilisateur optimisée.
+    </p>
+    <a class="button" href="#">Télécharger BrowserST</a>
+  </section>
 </main>
 
 <footer>
-    &copy; 2025 SolutionsTechnologie. Tous droits réservés.
+  © 2026 SolutionsTechnologie. Tous droits réservés.<br>
+  Design minimal & fiable.
 </footer>
 
 </body>

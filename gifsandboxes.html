@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIFSandBoxes</title>
+
+<link rel="icon" href="https://i.imgur.com/JrjM1jf.png" type="image/png">
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0a0a0f;
+    color: #f8fafc;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: radial-gradient(circle at top, #7f1d1d, #0a0a0f 70%);
+    border-bottom: 1px solid #2a0d0d;
+}
+
+.hero h1 {
+    font-size: 54px;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #ef4444;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-top: 10px;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #dc2626, #991b1b);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.25s;
+    box-shadow: 0 12px 30px rgba(220,38,38,0.35);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
+/* PREVIEW */
+.preview {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.preview h2 {
+    color: #f87171;
+    margin-bottom: 20px;
+}
+
+.preview img {
+    width: 90%;
+    max-width: 950px;
+    border-radius: 18px;
+    border: 1px solid #3f0a0a;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.8);
+}
+
+/* SANDBOX GRID */
+.sandbox {
+    padding: 70px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sandbox h2 {
+    text-align: center;
+    color: #ef4444;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* BOXES */
+.box {
+    background: #12070a;
+    border: 1px solid #2a0d0d;
+    border-radius: 16px;
+    padding: 20px;
+    transition: 0.25s;
+    position: relative;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: translateY(-6px);
+    border-color: #ef4444;
+    box-shadow: 0 15px 40px rgba(220,38,38,0.2);
+}
+
+.box h3 {
+    margin: 0 0 10px;
+    color: #f87171;
+}
+
+.box p {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+/* fake gif preview block */
+.gif {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #7f1d1d, #111827);
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gif::after {
+    content: "GIF";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: rgba(255,255,255,0.2);
+    font-size: 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.6;
+    border-top: 1px solid #2a0d0d;
+    margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>GIFSandBoxes</h1>
+    <p>Crée, teste et organise tes GIFs dans des environnements interactifs</p>
+    <a href="#" class="btn">Launch Sandbox</a>
+</div>
+
+<div class="preview">
+    <h2>Preview</h2>
+    <img src="screenshot-gifsandboxes.png" alt="GIFSandBoxes Preview">
+</div>
+
+<div class="sandbox">
+    <h2>Sandbox Grid</h2>
+
+    <div class="grid">
+
+        <div class="box">
+            <div class="gif"></div>
+            <h3>Explosion Test</h3>
+            <p>Preview d’animations dynamiques en boucle.</p>
+        </div>
+
+        <div class="box">
+            <div class="gif"></div>
+            <h3>UI Loop</h3>
+            <p>Tests d’interfaces animées en continu.</p>
+        </div>
+
+        <div class="box">
+            <div class="gif"></div>
+            <h3>Particle Field</h3>
+            <p>Simulation de particules interactives.</p>
+        </div>
+
+        <div class="box">
+            <div class="gif"></div>
+            <h3>Motion Lab</h3>
+            <p>Expérimentation de mouvements fluides.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    © SolutionsTechnologie — GIFSandBoxes
+</div>
+
+</body>
+</html>

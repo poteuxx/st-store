@@ -2,196 +2,119 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AudioST | SolutionsTechnologie-Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AudioST</title>
+
 <link rel="icon" href="https://i.imgur.com/JrjM1jf.png" type="image/png">
 
 <style>
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* BODY */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #0b0c0f;
-  color: #ffffff;
-  line-height: 1.5;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0b1220;
+    color: #e2e8f0;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 24px 16px 16px 16px;
-  border-bottom: 1px solid #1f2937;
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
 }
 
-header h1 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  background: linear-gradient(90deg, #60a5fa, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hero h1 { font-size: 48px; }
+
+.btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 14px 28px;
+    background: #2563eb;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-header p {
-  font-size: 12px;
-  color: #cbd5e1;
+.preview {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* NAVIGATION */
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 12px;
-  border-bottom: 1px solid #1f2937;
+.preview img {
+    width: 90%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
-nav a {
-  display: inline-block;
-  padding: 8px 18px;
-  font-size: 12px;
-  border-radius: 24px;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #2563eb;
-  border: 1px solid #1f2937;
-  transition: all 0.25s ease;
+.features {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-nav a:hover {
-  background-color: #1e40af;
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-/* MAIN CONTENT */
-main {
-  max-width: 960px;
-  margin: 24px auto;
-  padding: 0 16px;
+.card {
+    background: #111827;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #1f2937;
 }
 
-section {
-  margin-bottom: 28px;
-}
-
-section h2 {
-  font-size: 16px;
-  margin-bottom: 8px;
-  font-weight: 500;
-  background: linear-gradient(90deg, #60a5fa, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-section p {
-  font-size: 13px;
-  color: #e5e7eb;
-  margin-bottom: 10px;
-}
-
-/* BUTTONS */
-section a.button {
-  display: inline-block;
-  padding: 8px 20px;
-  font-size: 12px;
-  border-radius: 24px;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #2563eb;
-  transition: all 0.25s ease;
-}
-
-section a.button:hover {
-  background-color: #1e40af;
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 14px;
-  font-size: 11px;
-  color: #9ca3af;
-  border-top: 1px solid #1f2937;
-  margin-top: 20px;
-  background-color: #020617;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 18px;
-  }
-  nav a {
-    padding: 6px 14px;
-    font-size: 11px;
-  }
-  section h2 {
-    font-size: 15px;
-  }
-  section p {
-    font-size: 12px;
-  }
-  section a.button {
-    padding: 6px 16px;
-    font-size: 11px;
-  }
+.footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.5;
 }
 </style>
 </head>
+
 <body>
 
-<header>
-  <h1>AudioST</h1>
-  <p>SolutionsTechnologie — Expérience sonore optimisée</p>
-</header>
+<div class="hero">
+    <h1>AudioST</h1>
+    <p>Expérience sonore immersive et optimisée</p>
+    <a href="#" class="btn">Télécharger</a>
+</div>
 
-<nav>
-  <a href="index.html">ST-Store</a>
-  <a href="audiost.html">AudioST</a>
-  <a href="browserst.html">BrowserST</a>
-</nav>
+<div class="preview">
+    <h2>Preview</h2>
+    <img src="screenshot-audio.png" alt="AudioST">
+</div>
 
-<main>
-  <section>
-    <h2>Présentation d'AudioST</h2>
-    <p>
-      AudioST vous offre une expérience sonore immersive, simple à utiliser et performante sur tous vos appareils.
-    </p>
-  </section>
+<div class="features">
+    <h2 style="text-align:center;">Fonctionnalités</h2>
 
-  <section>
-    <h2>Fonctionnalités principales</h2>
-    <ul style="margin-left:18px; margin-bottom:10px; font-size:13px;">
-      <li>Lecture audio haute qualité</li>
-      <li>Interface minimaliste et intuitive</li>
-      <li>Compatible tous appareils</li>
-      <li>Optimisation sonore automatique</li>
-      <li>Installation simple et rapide</li>
-    </ul>
-  </section>
+    <div class="grid">
+        <div class="card">
+            <h3>🎧 Haute qualité</h3>
+            <p>Son clair et précis.</p>
+        </div>
 
-  <section>
-    <h2>Découvrir AudioST</h2>
-    <p>
-      Téléchargez ou essayez AudioST et profitez d’un son clair et immersif immédiatement.
-    </p>
-    <a class="button" href="#">Télécharger AudioST</a>
-  </section>
-</main>
+        <div class="card">
+            <h3>⚡ Rapide</h3>
+            <p>Lancement instantané.</p>
+        </div>
 
-<footer>
+        <div class="card">
+            <h3>💡 Simple</h3>
+            <p>Interface intuitive.</p>
+        </div>
 
-</footer>
+        <div class="card">
+            <h3>🌍 Compatible</h3>
+            <p>Tous les appareils.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    © SolutionsTechnologie — AudioST
+</div>
 
 </body>
 </html>
